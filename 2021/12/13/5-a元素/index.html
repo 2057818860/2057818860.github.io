@@ -24,7 +24,7 @@
 
   
 
-  <title>Hello World | Hi~ o(*￣▽￣*)ブ</title>
+  <title>5. a元素 | Hi~ o(*￣▽￣*)ブ</title>
 
   
 
@@ -98,16 +98,20 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">Hello World</h1>
+          <h1 class="title-wrap">5. a元素</h1>
           <h2 class="title-sub-wrap">
             <strong>lc</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-12-12T14:17:18.819Z" itemprop="datePublished">2021-12-12</time>
+            <time  class="article-date" datetime="2021-12-13T03:19:10.000Z" itemprop="datePublished">2021-12-13</time>
           </h2>
           <ul class="wrap-list dark">
   
+    <li><a href="/categories/%E5%89%8D%E7%AB%AF/">📒 前端</a></li>
+  
 </ul>
           <ul class="wrap-list dark">
+  
+    <li><a href="/tags/HTML%E6%A0%B8%E5%BF%83/">🏷️ HTML核心</a></li>
   
 </ul>
         </div>
@@ -131,19 +135,35 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="a元素"><a href="#a元素" class="headerlink" title="a元素"></a>a元素</h1><p>超链接</p>
+<h2 id="herf属性"><a href="#herf属性" class="headerlink" title="herf属性"></a>herf属性</h2><p>hyper reference（引用）：通常表示跳转地址</p>
+<ol>
+<li>普通链接</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">herf</span>=<span class="string">&quot;链接&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<ol start="2">
+<li>锚链接</li>
+</ol>
+<p>id属性：全局属性，表示元素在文档中的唯一编号</p>
+<ol start="3">
+<li>功能链接</li>
+</ol>
+<p>点击后，触发某个功能</p>
+<ul>
+<li><p>执行JS代码:javascript;</p>
+</li>
+<li><p>发送邮件，mailto:<br>要求用户计算机上安装有邮件发送软件：exchange</p>
+</li>
+<li><p>拨号：tel:<br>要求用户计算机上安装有拨号软件，或使用的是移动端访问</p>
+</li>
+</ul>
+<h2 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h2><p>表示跳转窗口位置。</p>
+<p>target的取值：</p>
+<ul>
+<li>_self:在当前页面窗口内打开，默认值。</li>
+<li>_blank:在新窗口中打开</li>
+</ul>
 
       </section>
 
@@ -156,8 +176,8 @@
     
     <div class="card-text">
       
-        <a href="/2021/12/13/1-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%BD%91%E9%A1%B5/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">我的第一个网页</h2>
+        <a href="/2021/12/13/6-%E8%B7%AF%E5%BE%84%E7%9A%84%E5%86%99%E6%B3%95/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">6.路径的写法</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -165,6 +185,20 @@
   </article>
 </div>
           
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2021/12/13/4-HTML%E5%AE%9E%E4%BD%93/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">HTML实体</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
           
         </nav>
       

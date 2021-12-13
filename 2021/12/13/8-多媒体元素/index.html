@@ -24,7 +24,7 @@
 
   
 
-  <title>Hello World | Hi~ o(*￣▽￣*)ブ</title>
+  <title>8.多媒体元素 | Hi~ o(*￣▽￣*)ブ</title>
 
   
 
@@ -98,16 +98,20 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">Hello World</h1>
+          <h1 class="title-wrap">8.多媒体元素</h1>
           <h2 class="title-sub-wrap">
             <strong>lc</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-12-12T14:17:18.819Z" itemprop="datePublished">2021-12-12</time>
+            <time  class="article-date" datetime="2021-12-13T03:21:59.000Z" itemprop="datePublished">2021-12-13</time>
           </h2>
           <ul class="wrap-list dark">
   
+    <li><a href="/categories/%E5%89%8D%E7%AB%AF/">📒 前端</a></li>
+  
 </ul>
           <ul class="wrap-list dark">
+  
+    <li><a href="/tags/HTML%E6%A0%B8%E5%BF%83/">🏷️ HTML核心</a></li>
   
 </ul>
         </div>
@@ -131,20 +135,20 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+        <h1 id="多媒体元素"><a href="#多媒体元素" class="headerlink" title="多媒体元素"></a>多媒体元素</h1><p>video:视频</p>
+<p>audio:音频</p>
+<h2 id="video"><a href="#video" class="headerlink" title="video"></a>video</h2><p>某些属性，只有两种状态：1、不写  2、取值为属性名，这种属性叫做布尔属性；<br>布尔属性，在HTML5中，可以不用书写属性值</p>
+<p>controls:控制控件的显示，取值只能为controls；</p>
+<p>autoplay：布尔属性，自动播放；</p>
+<p>muted：布尔属性，静音播放；</p>
+<p>loop：布尔属性，循环播放；</p>
+<h2 id="audio"><a href="#audio" class="headerlink" title="audio"></a>audio</h2><p>和视频完全一致；</p>
+<h2 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h2><ol>
+<li>旧版本的浏览器不支持这两个元素;</li>
+<li>不同的浏览器支持的音视频格式可能不一致;</li>
+</ol>
+<p>为了更好的兼容，我们通常这样写：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">controls</span> <span class="attr">loop</span> <span class="attr">autoplay</span> <span class="attr">muted</span> &gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;media/open.mp4&quot;</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;medio/open.webm&quot;</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">             对不起，你的浏览器不支持video元素，请点击这里下载最新版本浏览器 </span><br><span class="line">         <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
       </section>
 
       
@@ -156,8 +160,8 @@
     
     <div class="card-text">
       
-        <a href="/2021/12/13/1-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%BD%91%E9%A1%B5/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">我的第一个网页</h2>
+        <a href="/2021/12/13/9-%E5%88%97%E8%A1%A8%E5%85%83%E7%B4%A0/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">9.列表元素</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -165,6 +169,20 @@
   </article>
 </div>
           
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2021/12/13/7-%E5%9B%BE%E7%89%87%E5%85%83%E7%B4%A0/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">7.图片元素</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
           
         </nav>
       
