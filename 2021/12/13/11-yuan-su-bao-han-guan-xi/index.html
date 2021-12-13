@@ -112,7 +112,7 @@
     <div class="configure-border-2">
       <div class="configure-core"></div>
     </div>
-    <div class="loading-word">loading...</div>
+    <div class="loading-word">加载中...</div>
   </div>
 </div>
 
@@ -237,6 +237,125 @@
     <div class="drawer-box-content">
       <ul class="drawer-box-content_menu">
         
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                  
+                  <span class="name">首页</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/archives" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-archive" aria-hidden="true"></i>
+                  
+                  <span class="name">归档</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/tags" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-tags" aria-hidden="true"></i>
+                  
+                  <span class="name">标签</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/categories" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-bookmark" aria-hidden="true"></i>
+                  
+                  <span class="name">分类</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/about" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                  
+                  <span class="name">关于</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/friends" class="drawer-menu-item-link">
+                  
+                  <span class="name">友情链接</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(6)">
+                  <span>
+                    
+                      <i class="fas fa-link"></i>
+                    
+                    <span class="name">更多</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(6)}" aria-hidden="true"></i>
+                </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(6)">
+                  
+                  <li>
+                    <a href="/gallery">
+                      
+                      <i class="fas fa-music" style="margin-top: -20px;"></i>
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/huoban">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>友情连接</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/me">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>关于我</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>百度</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
         
           <li class="drawer-box-content_item">
             <a target="_blank" rel="noopener" href="https://github.com/yuang01/hexo-theme-bamboo">
@@ -307,6 +426,123 @@
     <nav class="navbar">
       <ul class="menu">
         
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/" class="menu-item-link" title="首页">
+                  
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                  
+                  <span class="name">首页</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/archives" class="menu-item-link" title="归档">
+                  
+                    <i class="fas fa-archive" aria-hidden="true"></i>
+                  
+                  <span class="name">归档</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/tags" class="menu-item-link" title="标签">
+                  
+                    <i class="fas fa-tags" aria-hidden="true"></i>
+                  
+                  <span class="name">标签</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/categories" class="menu-item-link" title="分类">
+                  
+                    <i class="fas fa-bookmark" aria-hidden="true"></i>
+                  
+                  <span class="name">分类</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/about" class="menu-item-link" title="关于">
+                  
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                  
+                  <span class="name">关于</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/friends" class="menu-item-link" title="友情链接">
+                  
+                  <span class="name">友情链接</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="javascript:;" class="menu-item-link" title="更多">
+                  
+                    <i class="fas fa-link"></i>
+                  
+                  <span class="name">更多</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/gallery">
+                      
+                      <i class="fas fa-music" style="margin-top: -20px;"></i>
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/huoban">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>友情连接</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/me">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>关于我</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>百度</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
       </ul>
       
       
@@ -318,13 +554,13 @@
         <h2>
           <span>
             <i class="fas fa-search" aria-hidden="true"></i>
-            <span class="title">Search</span>
+            <span class="title">本地搜索</span>
           </span>
           <i class="fas fa-times close" pointer style="float:right;" aria-hidden="true" @click.self="cancelDialogVisible()"></i>
         </h2>
         <form class="site-search-form">
           <input type="text"
-            placeholder="Please enter keywords"
+            placeholder="请输入关键字"
             id="local-search-input" 
             @click="getSearchFile()"
             class="st-search-input"
@@ -448,13 +684,13 @@
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> Published in：2021-12-13 |
+          <i class="fas fa-calendar"></i> 发表于：2021-12-13 |
         </span>
       
 
       
         <span class="post-detail-header_categories">
-          <i class="iconfont iconbookmark1"></i> category：
+          <i class="iconfont iconbookmark1"></i> 分类：
           
             <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-detail-header_category">
               前端
@@ -466,16 +702,16 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fas fa-file-text-o"></i> Words: 143 |
+            <i class="fas fa-file-text-o"></i> 字数统计: 143 |
           </span>
   
           <span class="min2read">
-            <i class="fas fa-clock"></i> Reading time: 1min |
+            <i class="fas fa-clock"></i> 阅读时长: 1分钟 |
           </span>
   
           
             <span class="reading">
-              <i class="fas fa-eye"></i> reading：<span id="busuanzi_value_page_pv"></span>
+              <i class="fas fa-eye"></i> 阅读量：<span id="busuanzi_value_page_pv"></span>
             </span>
           
         </div>
@@ -524,16 +760,16 @@
         <div class="copyright">
   <ul class="post-copyright">
     <li class="post-copyright-author">
-    <strong>author:  </strong>凉茶</a>
+    <strong>作者:  </strong>凉茶</a>
     </li>
     <li class="post-copyright-link">
-    <strong>link:  </strong>
+    <strong>文章链接:  </strong>
     <a href="/2021/12/13/11-yuan-su-bao-han-guan-xi/" target="_blank" title="11.元素包含关系">https://2057818860.github.io/2021/12/13/11-yuan-su-bao-han-guan-xi/</a>
     </li>
     <li class="post-copyright-license">
-      <strong>Copyright notice:   </strong>
-      All articles on this website, unless otherwise stated, adopt <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
-      reprint policy. If reproduced, please indicate source!
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
     </li>
   </ul>
 <div>
@@ -554,7 +790,7 @@
     </div>
     <a href="/2021/12/13/xiao-ji-qiao/" class="post-nav-link">
       <div class="title">
-        <i class="fas fa-angle-left"></i> Prev:
+        <i class="fas fa-angle-left"></i> 上一篇:
         <div class="title-text">小技巧</div>
       </div>
       
@@ -576,7 +812,7 @@
     </div>
     <a href="/2021/12/13/10-rong-qi-yuan-su/" class="post-nav-link">
       <div class="title">
-        Next: <i class="fas fa-angle-right"></i>
+        下一篇: <i class="fas fa-angle-right"></i>
         <div class="title-text">10.容器元素</div>
       </div>
       <!-- <div class="content">
@@ -717,9 +953,9 @@ div元素没有语义
   <div class="toc-aside">
     <div class="toc-main">
       <div class="toc-aside-title">
-        <i class="fas fa-list-ul" aria-hidden="true"></i><span>catalog</span>
+        <i class="fas fa-list-ul" aria-hidden="true"></i><span>本文目录</span>
         
-          <div class="toc-open-close">catalog</div>
+          <div class="toc-open-close">本文目录</div>
         
       </div>
       <div class="toc-content">
@@ -961,11 +1197,11 @@ div元素没有语义
             <!-- 不蒜子统计 -->
             <!-- 不蒜子统计 -->
 <span id="busuanzi_container_site_pv">
-      <i class="fas fa-eye" aria-hidden="true"></i>Total visits：<span id="busuanzi_value_site_pv"></span> times
+      <i class="fas fa-eye" aria-hidden="true"></i>本站总访问量：<span id="busuanzi_value_site_pv"></span> 次
 </span>
 <span class="post-meta-divider">|</span>
 <span id="busuanzi_container_site_uv" style='display:none'>
-      <i class="fas fa-users" aria-hidden="true"></i>Number of visitors：<span id="busuanzi_value_site_uv"></span> people
+      <i class="fas fa-users" aria-hidden="true"></i>本站访客数：<span id="busuanzi_value_site_uv"></span> 人
 </span>
 
           
@@ -1352,7 +1588,7 @@ div元素没有语义
       },
       mounted() {
         const that = this;
-        var copy = 'copy';
+        var copy = '复制';
         /* code */
         var initCopyCode = function () {
           var copyHtml = '';
